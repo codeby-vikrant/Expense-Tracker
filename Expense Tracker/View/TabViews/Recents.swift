@@ -61,14 +61,28 @@ struct Recents: View {
                     .contentShape(.circle)
             }
         }
-            .padding(.bottom, 5)
+        .padding(.bottom, userName.isEmpty ? 10 : 5)
             .background{
-                Rectangle()
-                    .fill(.ultraThinMaterial)
+                VStack(spacing: 0){
+                    Rectangle()
+                        .fill(.ultraThinMaterial)
+                    
+                    Divider()
+                }
+                .visualEffect { content, geometryProxy in
+                    content
+                        .opacity(headerBGOpacity(geometryProxy))
+                }
                     .padding(.horizontal, -15)
                     .padding(.top, -(safeArea.top + 15))
             }
     }
+    
+    func headerBGOpacity(_ proxy: GeometryProxy) ->  CGFloat{
+        let minY = proxy.frame(in: .scrollView).minY + safeArea.top
+        return minY > 0 ? 0 : (-minY / 15)
+    }
+    
     func headerScale(_ size: CGSize, proxy: GeometryProxy) ->  CGFloat{
         let minY = proxy.frame(in: .scrollView).minY
         let screenHeight = size.height
