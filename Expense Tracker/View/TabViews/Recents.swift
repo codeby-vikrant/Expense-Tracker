@@ -26,8 +26,14 @@ struct Recents: View {
                         Section{
                             //Date Filter Button
                             Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
-                                Text("")
+                                Text("\(format(date: startDate, format: "dd - MMM yy")) to \(format(date: endDate, format: "dd - MMM yy"))")
+                                    .font(.caption2)
+                                    .foregroundStyle(.gray)
                             })
+                            .hSpacing(.leading)
+                            
+                            //Card view
+                            
                         } header: {
                             HeaderView(size)
                         }

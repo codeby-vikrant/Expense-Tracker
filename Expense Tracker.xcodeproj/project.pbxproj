@@ -26,6 +26,7 @@
 		434EC5D22C5FC74E00D1090D /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434EC5D12C5FC74E00D1090D /* Settings.swift */; };
 		434EC5D42C5FD3D800D1090D /* View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434EC5D32C5FD3D800D1090D /* View+Extensions.swift */; };
 		434EC5D62C5FE0A700D1090D /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434EC5D52C5FE0A700D1090D /* Date+Extensions.swift */; };
+		434EC5DA2C5FE37B00D1090D /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434EC5D92C5FE37B00D1090D /* CardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +69,7 @@
 		434EC5D12C5FC74E00D1090D /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		434EC5D32C5FD3D800D1090D /* View+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extensions.swift"; sourceTree = "<group>"; };
 		434EC5D52C5FE0A700D1090D /* Date+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extensions.swift"; sourceTree = "<group>"; };
+		434EC5D92C5FE37B00D1090D /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,6 +159,7 @@
 		434EC5B92C5F999300D1090D /* View */ = {
 			isa = PBXGroup;
 			children = (
+				434EC5D82C5FE36C00D1090D /* Helpers */,
 				434EC5CA2C5FC71A00D1090D /* TabViews */,
 				434EC5BD2C5F99F000D1090D /* IntroScreen.swift */,
 			);
@@ -193,6 +196,14 @@
 				434EC5D12C5FC74E00D1090D /* Settings.swift */,
 			);
 			path = TabViews;
+			sourceTree = "<group>";
+		};
+		434EC5D82C5FE36C00D1090D /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				434EC5D92C5FE37B00D1090D /* CardView.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -329,6 +340,7 @@
 				434EC5CC2C5FC72900D1090D /* Recents.swift in Sources */,
 				434EC5C72C5FC3A000D1090D /* Transaction.swift in Sources */,
 				434EC5922C5F997200D1090D /* ContentView.swift in Sources */,
+				434EC5DA2C5FE37B00D1090D /* CardView.swift in Sources */,
 				434EC5BE2C5F99F000D1090D /* IntroScreen.swift in Sources */,
 				434EC5C32C5FBEF400D1090D /* Tab.swift in Sources */,
 				434EC5D22C5FC74E00D1090D /* Settings.swift in Sources */,
