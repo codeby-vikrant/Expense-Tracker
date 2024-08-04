@@ -24,6 +24,7 @@
 		434EC5CE2C5FC73C00D1090D /* Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434EC5CD2C5FC73C00D1090D /* Search.swift */; };
 		434EC5D02C5FC74600D1090D /* Graphs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434EC5CF2C5FC74600D1090D /* Graphs.swift */; };
 		434EC5D22C5FC74E00D1090D /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434EC5D12C5FC74E00D1090D /* Settings.swift */; };
+		434EC5D42C5FD3D800D1090D /* View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434EC5D32C5FD3D800D1090D /* View+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +65,7 @@
 		434EC5CD2C5FC73C00D1090D /* Search.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Search.swift; sourceTree = "<group>"; };
 		434EC5CF2C5FC74600D1090D /* Graphs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Graphs.swift; sourceTree = "<group>"; };
 		434EC5D12C5FC74E00D1090D /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		434EC5D32C5FD3D800D1090D /* View+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -174,6 +176,7 @@
 			isa = PBXGroup;
 			children = (
 				434EC5C02C5FBBEA00D1090D /* Constants.swift */,
+				434EC5D32C5FD3D800D1090D /* View+Extensions.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -328,6 +331,7 @@
 				434EC5D22C5FC74E00D1090D /* Settings.swift in Sources */,
 				434EC5902C5F997200D1090D /* Expense_TrackerApp.swift in Sources */,
 				434EC5CE2C5FC73C00D1090D /* Search.swift in Sources */,
+				434EC5D42C5FD3D800D1090D /* View+Extensions.swift in Sources */,
 				434EC5C12C5FBBEA00D1090D /* Constants.swift in Sources */,
 				434EC5D02C5FC74600D1090D /* Graphs.swift in Sources */,
 				434EC5C52C5FC34500D1090D /* Category.swift in Sources */,
