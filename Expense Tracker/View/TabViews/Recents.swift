@@ -10,6 +10,11 @@ import SwiftUI
 struct Recents: View {
     //User properties
     @AppStorage("userName") private var userName: String = ""
+    
+    //View properties
+    @State private var startDate: Date = .now.startOfMonth
+    @State private var endDate: Date = .now.endOfMonth
+    
     var body: some View {
         GeometryReader{
             //Animation
@@ -19,7 +24,10 @@ struct Recents: View {
                 ScrollView(.vertical){
                     LazyVStack(spacing: 10, pinnedViews: [.sectionHeaders]){
                         Section{
-                            
+                            //Date Filter Button
+                            Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
+                                Text("")
+                            })
                         } header: {
                             HeaderView(size)
                         }
