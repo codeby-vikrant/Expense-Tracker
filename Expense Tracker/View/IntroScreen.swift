@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct IntroScreen: View {
-    @AppStorage("isFirsTime") private var isFirstTime: Bool = false
+    @AppStorage("isFirsTime") private var isFirstTime: Bool = true
     var body: some View {
         VStack(spacing: 15){
             Text("What's new in the\nExpense Tracker")
