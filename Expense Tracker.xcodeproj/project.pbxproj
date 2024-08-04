@@ -16,6 +16,7 @@
 		434EC5AD2C5F997300D1090D /* Expense_TrackerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434EC5AC2C5F997300D1090D /* Expense_TrackerUITestsLaunchTests.swift */; };
 		434EC5BE2C5F99F000D1090D /* IntroScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434EC5BD2C5F99F000D1090D /* IntroScreen.swift */; };
 		434EC5C12C5FBBEA00D1090D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434EC5C02C5FBBEA00D1090D /* Constants.swift */; };
+		434EC5C32C5FBEF400D1090D /* Tab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434EC5C22C5FBEF400D1090D /* Tab.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		434EC5AC2C5F997300D1090D /* Expense_TrackerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Expense_TrackerUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		434EC5BD2C5F99F000D1090D /* IntroScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroScreen.swift; sourceTree = "<group>"; };
 		434EC5C02C5FBBEA00D1090D /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		434EC5C22C5FBEF400D1090D /* Tab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,6 +147,7 @@
 		434EC5BA2C5F99A100D1090D /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				434EC5C22C5FBEF400D1090D /* Tab.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -289,6 +292,7 @@
 			files = (
 				434EC5922C5F997200D1090D /* ContentView.swift in Sources */,
 				434EC5BE2C5F99F000D1090D /* IntroScreen.swift in Sources */,
+				434EC5C32C5FBEF400D1090D /* Tab.swift in Sources */,
 				434EC5902C5F997200D1090D /* Expense_TrackerApp.swift in Sources */,
 				434EC5C12C5FBBEA00D1090D /* Constants.swift in Sources */,
 			);
