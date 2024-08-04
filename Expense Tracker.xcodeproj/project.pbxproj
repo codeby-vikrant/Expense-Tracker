@@ -14,6 +14,7 @@
 		434EC5A12C5F997300D1090D /* Expense_TrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434EC5A02C5F997300D1090D /* Expense_TrackerTests.swift */; };
 		434EC5AB2C5F997300D1090D /* Expense_TrackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434EC5AA2C5F997300D1090D /* Expense_TrackerUITests.swift */; };
 		434EC5AD2C5F997300D1090D /* Expense_TrackerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434EC5AC2C5F997300D1090D /* Expense_TrackerUITestsLaunchTests.swift */; };
+		434EC5BE2C5F99F000D1090D /* IntroScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434EC5BD2C5F99F000D1090D /* IntroScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		434EC5A62C5F997300D1090D /* Expense TrackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Expense TrackerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		434EC5AA2C5F997300D1090D /* Expense_TrackerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Expense_TrackerUITests.swift; sourceTree = "<group>"; };
 		434EC5AC2C5F997300D1090D /* Expense_TrackerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Expense_TrackerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		434EC5BD2C5F99F000D1090D /* IntroScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +96,9 @@
 		434EC58E2C5F997200D1090D /* Expense Tracker */ = {
 			isa = PBXGroup;
 			children = (
+				434EC5BF2C5FBBAC00D1090D /* Helpers */,
+				434EC5BA2C5F99A100D1090D /* Model */,
+				434EC5B92C5F999300D1090D /* View */,
 				434EC58F2C5F997200D1090D /* Expense_TrackerApp.swift */,
 				434EC5912C5F997200D1090D /* ContentView.swift */,
 				434EC5932C5F997300D1090D /* Assets.xcassets */,
@@ -125,6 +130,28 @@
 				434EC5AC2C5F997300D1090D /* Expense_TrackerUITestsLaunchTests.swift */,
 			);
 			path = "Expense TrackerUITests";
+			sourceTree = "<group>";
+		};
+		434EC5B92C5F999300D1090D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				434EC5BD2C5F99F000D1090D /* IntroScreen.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		434EC5BA2C5F99A100D1090D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		434EC5BF2C5FBBAC00D1090D /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,6 +285,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				434EC5922C5F997200D1090D /* ContentView.swift in Sources */,
+				434EC5BE2C5F99F000D1090D /* IntroScreen.swift in Sources */,
 				434EC5902C5F997200D1090D /* Expense_TrackerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
