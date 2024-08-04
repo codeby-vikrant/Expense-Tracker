@@ -31,7 +31,9 @@ struct IntroScreen: View {
             
             Spacer(minLength: 10)
             
-            Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
+            Button(action: {
+                isFirstTime = false
+            }, label: {
                 Text("Continue")
                     .fontWeight(.bold)
                     .foregroundStyle(.white)
