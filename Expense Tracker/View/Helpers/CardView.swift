@@ -56,6 +56,8 @@ struct CardView: View {
                     }
                 }
             }
+            .padding([.horizontal, .bottom], 25)
+            .padding(.top, 15)
         }
     }
 }

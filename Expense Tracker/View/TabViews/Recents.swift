@@ -33,13 +33,16 @@ struct Recents: View {
                             .hSpacing(.leading)
                             
                             //Card view
+                            CardView(income: 2039, expense: 4098)
                             
+                            //Custom Segmented Control
                         } header: {
                             HeaderView(size)
                         }
                     }
                     .padding(15)
                 }
+                .background(.gray.opacity(0.15))
             }
         }
     }
