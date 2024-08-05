@@ -14,6 +14,10 @@ struct Recents: View {
     //View properties
     @State private var startDate: Date = .now.startOfMonth
     @State private var endDate: Date = .now.endOfMonth
+    @State private var selectedCategory: Category = .expense
+    
+    //Animation
+    @Namespace private var animation
     
     var body: some View {
         GeometryReader{
@@ -36,6 +40,7 @@ struct Recents: View {
                             CardView(income: 2039, expense: 4098)
                             
                             //Custom Segmented Control
+                            CustomSegmentedControl()
                         } header: {
                             HeaderView(size)
                         }
@@ -95,6 +100,23 @@ struct Recents: View {
             }
     }
     
+    //Segmented Control
+    @ViewBuilder
+    func CustomSegmentedControl() -> some View{
+        HStack(spacing: 0){
+            ForEach(Category.allCases, id: \.rawValue){ category in
+                Text(category.rawValue)
+                    .hSpacing()
+                    .padding(.vertical, 10)
+                    .background(){
+                        if category == selectedCategory{
+                            Capsule()
+                            
+                        }
+                    }
+            }
+        }
+    }
     func headerBGOpacity(_ proxy: GeometryProxy) ->  CGFloat{
         let minY = proxy.frame(in: .scrollView).minY + safeArea.top
         return minY > 0 ? 0 : (-minY / 15)
