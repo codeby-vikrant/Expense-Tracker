@@ -111,12 +111,22 @@ struct Recents: View {
                     .background(){
                         if category == selectedCategory{
                             Capsule()
-                            
+                                .fill(.background)
+                                .matchedGeometryEffect(id: "ACTIVETAB", in: animation)
+                        }
+                    }
+                    .contentShape(.capsule)
+                    .onTapGesture {
+                        withAnimation(.snappy){
+                            selectedCategory = category
                         }
                     }
             }
         }
+        .background(.gray.opacity(0.15), in: .capsule)
+        .padding(.top, 5)
     }
+    
     func headerBGOpacity(_ proxy: GeometryProxy) ->  CGFloat{
         let minY = proxy.frame(in: .scrollView).minY + safeArea.top
         return minY > 0 ? 0 : (-minY / 15)
