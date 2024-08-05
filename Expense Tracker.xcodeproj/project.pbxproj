@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		43442E532C61317D0077FB6E /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43442E522C61317D0077FB6E /* Home.swift */; };
+		43442E552C61347A0077FB6E /* DateFilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43442E542C61347A0077FB6E /* DateFilterView.swift */; };
 		434EC5902C5F997200D1090D /* Expense_TrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434EC58F2C5F997200D1090D /* Expense_TrackerApp.swift */; };
 		434EC5922C5F997200D1090D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434EC5912C5F997200D1090D /* ContentView.swift */; };
 		434EC5942C5F997300D1090D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 434EC5932C5F997300D1090D /* Assets.xcassets */; };
@@ -50,6 +51,7 @@
 
 /* Begin PBXFileReference section */
 		43442E522C61317D0077FB6E /* Home.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		43442E542C61347A0077FB6E /* DateFilterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFilterView.swift; sourceTree = "<group>"; };
 		434EC58C2C5F997200D1090D /* Expense Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Expense Tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		434EC58F2C5F997200D1090D /* Expense_TrackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Expense_TrackerApp.swift; sourceTree = "<group>"; };
 		434EC5912C5F997200D1090D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -208,6 +210,7 @@
 				43442E522C61317D0077FB6E /* Home.swift */,
 				434EC5D92C5FE37B00D1090D /* CardView.swift */,
 				43A083952C60C61C006BD993 /* TransactionCardView.swift */,
+				43442E542C61347A0077FB6E /* DateFilterView.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -344,6 +347,7 @@
 			files = (
 				434EC5C92C5FC44200D1090D /* TintColor.swift in Sources */,
 				434EC5CC2C5FC72900D1090D /* Recents.swift in Sources */,
+				43442E552C61347A0077FB6E /* DateFilterView.swift in Sources */,
 				434EC5C72C5FC3A000D1090D /* Transaction.swift in Sources */,
 				434EC5922C5F997200D1090D /* ContentView.swift in Sources */,
 				434EC5DA2C5FE37B00D1090D /* CardView.swift in Sources */,
