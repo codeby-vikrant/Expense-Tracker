@@ -30,3 +30,11 @@ struct Transaction: Identifiable {
         return tints.first(where: {$0.color == tintColor})?.value ?? appTint
     }
 }
+
+//Sample transactions for UI Building
+var sampleTransaction: [Transaction] = [
+    .init(title: "Magic Keyboard", remarks: "Apple Product", amount: 7500, dateAdded: .now, category: .expense, tintColor: tints.randomElement()!),
+    .init(title: "Apple Music", remarks: "Subscription", amount: 99, dateAdded: .now, category: .expense, tintColor: tints.randomElement()!),
+    .init(title: "iCloud+", remarks: "Subscription", amount: 5900, dateAdded: .now, category: .expense, tintColor: tints.randomElement()!),
+    .init(title: "Payment", remarks: "Payment Received", amount: 2499, dateAdded: .now, category: .expense, tintColor: tints.randomElement()!),
+]
