@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		43442E532C61317D0077FB6E /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43442E522C61317D0077FB6E /* Home.swift */; };
 		434EC5902C5F997200D1090D /* Expense_TrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434EC58F2C5F997200D1090D /* Expense_TrackerApp.swift */; };
 		434EC5922C5F997200D1090D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434EC5912C5F997200D1090D /* ContentView.swift */; };
 		434EC5942C5F997300D1090D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 434EC5932C5F997300D1090D /* Assets.xcassets */; };
@@ -48,6 +49,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		43442E522C61317D0077FB6E /* Home.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		434EC58C2C5F997200D1090D /* Expense Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Expense Tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		434EC58F2C5F997200D1090D /* Expense_TrackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Expense_TrackerApp.swift; sourceTree = "<group>"; };
 		434EC5912C5F997200D1090D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -203,6 +205,7 @@
 		434EC5D82C5FE36C00D1090D /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				43442E522C61317D0077FB6E /* Home.swift */,
 				434EC5D92C5FE37B00D1090D /* CardView.swift */,
 				43A083952C60C61C006BD993 /* TransactionCardView.swift */,
 			);
@@ -345,6 +348,7 @@
 				434EC5922C5F997200D1090D /* ContentView.swift in Sources */,
 				434EC5DA2C5FE37B00D1090D /* CardView.swift in Sources */,
 				434EC5BE2C5F99F000D1090D /* IntroScreen.swift in Sources */,
+				43442E532C61317D0077FB6E /* Home.swift in Sources */,
 				434EC5C32C5FBEF400D1090D /* Tab.swift in Sources */,
 				434EC5D22C5FC74E00D1090D /* Settings.swift in Sources */,
 				434EC5902C5F997200D1090D /* Expense_TrackerApp.swift in Sources */,
