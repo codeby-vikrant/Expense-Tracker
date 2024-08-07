@@ -8,8 +8,16 @@
 import SwiftUI
 
 struct Search: View {
+    //View properties
+    @State private var searchText: String = ""
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationStack{
+            LazyVStack(spacing: 12){
+                
+            }
+            .searchable(text: $searchText)
+        }
     }
 }
 
