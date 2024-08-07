@@ -29,6 +29,7 @@
 		434EC5D42C5FD3D800D1090D /* View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434EC5D32C5FD3D800D1090D /* View+Extensions.swift */; };
 		434EC5D62C5FE0A700D1090D /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434EC5D52C5FE0A700D1090D /* Date+Extensions.swift */; };
 		434EC5DA2C5FE37B00D1090D /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434EC5D92C5FE37B00D1090D /* CardView.swift */; };
+		435C78832C63B12700445332 /* LockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435C78822C63B12700445332 /* LockView.swift */; };
 		43A083962C60C61C006BD993 /* TransactionCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43A083952C60C61C006BD993 /* TransactionCardView.swift */; };
 /* End PBXBuildFile section */
 
@@ -75,6 +76,7 @@
 		434EC5D32C5FD3D800D1090D /* View+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extensions.swift"; sourceTree = "<group>"; };
 		434EC5D52C5FE0A700D1090D /* Date+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extensions.swift"; sourceTree = "<group>"; };
 		434EC5D92C5FE37B00D1090D /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		435C78822C63B12700445332 /* LockView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LockView.swift; sourceTree = "<group>"; };
 		43A083952C60C61C006BD993 /* TransactionCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionCardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -207,6 +209,7 @@
 		434EC5D82C5FE36C00D1090D /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				435C78822C63B12700445332 /* LockView.swift */,
 				43442E522C61317D0077FB6E /* Home.swift */,
 				434EC5D92C5FE37B00D1090D /* CardView.swift */,
 				43A083952C60C61C006BD993 /* TransactionCardView.swift */,
@@ -359,6 +362,7 @@
 				434EC5CE2C5FC73C00D1090D /* Search.swift in Sources */,
 				434EC5D62C5FE0A700D1090D /* Date+Extensions.swift in Sources */,
 				434EC5D42C5FD3D800D1090D /* View+Extensions.swift in Sources */,
+				435C78832C63B12700445332 /* LockView.swift in Sources */,
 				434EC5C12C5FBBEA00D1090D /* Constants.swift in Sources */,
 				434EC5D02C5FC74600D1090D /* Graphs.swift in Sources */,
 				434EC5C52C5FC34500D1090D /* Category.swift in Sources */,
