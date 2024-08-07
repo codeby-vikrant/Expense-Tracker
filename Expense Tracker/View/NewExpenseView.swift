@@ -8,6 +8,11 @@
 import SwiftUI
 
 struct NewExpenseView: View {
+    //Environment properties
+    @Environment(\.modelContext) private var context
+    @Environment(\.dismiss) private var dismiss
+    var editTransaction: Transaction?
+    
     //View properties
     @State private var title: String = ""
     @State private var remarks: String = ""
@@ -16,7 +21,7 @@ struct NewExpenseView: View {
     @State private var category: Category = .expense
     
     //Random tint
-    var tint: TintColor = tints.randomElement()!
+    @State var tint: TintColor = tints.randomElement()!
     
     var body: some View {
         ScrollView(.vertical){
@@ -76,11 +81,31 @@ struct NewExpenseView: View {
                 Button("Save", action: save)
             }
         })
+        .onAppear(perform: {
+            if let editTransaction{
+                //Load all existing data
+                title = editTransaction.title
+                remarks = editTransaction.remarks
+                dateAdded = editTransaction.dateAdded
+                if let category = editTransaction.rawCategory{
+                    self.category = category
+                }
+                amount = editTransaction.amount
+                if let tint = editTransaction.tint{
+                    self.tint = tint
+                }
+            }
+        })
     }
     
     //Saving data
     func save(){
+        //Saving item to swiftdata
+        let transaction = Transaction(title: title, remarks: remarks, amount: amount, dateAdded: dateAdded, category: category, tintColor: tint)
+        context.insert(transaction)
         
+        //Dismissing View
+        dismiss()
     }
     
     @ViewBuilder
