@@ -27,12 +27,14 @@ struct Search: View {
             })
             
             .onChange(of: searchText, {oldValue, newValue in
+                if newValue.isEmpty{
+                    filterText = ""
+                }
                 searchPublisher.send(newValue)
             })
             
             .onReceive(searchPublisher.debounce(for: .seconds(0.3), scheduler: DispatchQueue.main), perform: { text in
                 filterText = text
-                print(text)
             })
             .searchable(text: $searchText)
             .navigationTitle("Search")
