@@ -53,11 +53,34 @@ struct NewExpenseView: View {
                     }
                 })
                 
+                //Date Picker
+                VStack(alignment: .leading, spacing: 10, content: {
+                    Text("Date")
+                        .font(.caption)
+                        .foregroundStyle(.gray)
+                        .hSpacing(.leading)
+                    
+                    DatePicker("", selection: $dateAdded, displayedComponents: [.date])
+                        .datePickerStyle(.graphical)
+                        .padding(.horizontal, 15)
+                        .padding(.vertical, 12)
+                        .background(.background, in: .rect(cornerRadius: 10))
+                })
             }
             .padding(15)
         }
         .navigationTitle("Add Transaction")
         .background(.gray.opacity(0.15))
+        .toolbar(content: {
+            ToolbarItem(placement: .topBarTrailing){
+                Button("Save", action: save)
+            }
+        })
+    }
+    
+    //Saving data
+    func save(){
+        
     }
     
     @ViewBuilder
