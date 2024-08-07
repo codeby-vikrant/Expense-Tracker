@@ -14,17 +14,20 @@ struct Search: View {
     var body: some View {
         NavigationStack{
             ScrollView(.vertical){
-                
+                LazyVStack(spacing: 12){
+                    
+                }
             }
             .overlay(content: {
                 ContentUnavailableView("Search Transaction", systemImage: "magnifyingglass")
                     .opacity(searchText.isEmpty ? 1 : 0)
             })
-            LazyVStack(spacing: 12){
-                
-            }
+            .onChange(of: searchText, {oldValue, newValue in
+                    print(searchText)
+            })
             .searchable(text: $searchText)
             .navigationTitle("Search")
+            .background(.gray.opacity(0.15))
         }
     }
 }
