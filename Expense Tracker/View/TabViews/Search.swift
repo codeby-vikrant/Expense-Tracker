@@ -6,10 +6,13 @@
 //
 
 import SwiftUI
+import Combine
 
 struct Search: View {
     //View properties
     @State private var searchText: String = ""
+    @State private var filterText: String = ""
+    let searchPublisher = PassthroughSubject<String, Never>()
     
     var body: some View {
         NavigationStack{
@@ -20,10 +23,16 @@ struct Search: View {
             }
             .overlay(content: {
                 ContentUnavailableView("Search Transaction", systemImage: "magnifyingglass")
-                    .opacity(searchText.isEmpty ? 1 : 0)
+                    .opacity(filterText.isEmpty ? 1 : 0)
             })
+            
             .onChange(of: searchText, {oldValue, newValue in
-                    print(searchText)
+                searchPublisher.send(newValue)
+            })
+            
+            .onReceive(searchPublisher.debounce(for: .seconds(0.3), scheduler: DispatchQueue.main), perform: { text in
+                filterText = text
+                print(text)
             })
             .searchable(text: $searchText)
             .navigationTitle("Search")
