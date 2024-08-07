@@ -28,6 +28,15 @@ struct NewExpenseView: View {
                 
                 //Preview transaction card view
                 TransactionCardView(transaction: .init(title: title.isEmpty ? "Title" : title, remarks: remarks.isEmpty ? "Remarks" : remarks, amount: amount, dateAdded: dateAdded, category: category, tintColor: tint))
+             
+                CustomSection("Title", "Magic Keyboard", value: $title)
+                
+                CustomSection("Remarks", "Apple Product!", value: $remarks)
+                
+                //Amount and category check box
+                VStack(alignment: .leading, spacing: 10, content: {
+                    Text("Amount & Category")
+                })
                 
             }
             .padding(15)
@@ -37,14 +46,14 @@ struct NewExpenseView: View {
     }
     
     @ViewBuilder
-    func CustomSection(_ title: String, value: Binding<String>) -> some View{
+    func CustomSection(_ title: String, _ hint: String, value: Binding<String>) -> some View{
         VStack(alignment: .leading, spacing: 10, content: {
-            Text("Title")
+            Text(title)
                 .font(.caption)
                 .foregroundStyle(.gray)
                 .hSpacing(.leading)
             
-            TextField("Magic Keyboard", text: $title)
+            TextField(hint, text: value)
                 .padding(.horizontal, 15)
                 .padding(.vertical, 12)
                 .background(.background, in: .rect(cornerRadius: 10))
