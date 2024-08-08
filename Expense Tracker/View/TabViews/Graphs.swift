@@ -18,16 +18,34 @@ struct Graphs: View {
     var body: some View {
         ScrollView(.vertical){
             LazyVStack(spacing: 10){
-                //Chart view
-                Chart{
-                    ForEach(chartGroups){ group in
-                        ForEach(group.categories){ chart in
-                            BarMark(x: .value("Month", format(date: group.date, format: "MM yy")), y: .value(chart.category.rawValue, chart.totalValue))
-                        }
-                    }
+                ChartView()
+                    .padding(10)
+                    .frame(height: 200)
+                    .background(.background, in: .rect(cornerRadius: 10))
+            }
+        }
+    }
+    
+    @ViewBuilder
+    func ChartView() -> some View{
+        //Chart view
+        Chart{
+            ForEach(chartGroups){ group in
+                ForEach(group.categories){ chart in
+                    BarMark(
+                        x: .value("Month", format(date: group.date, format: "MM yy")),
+                        y: .value(chart.category.rawValue, chart.totalValue), width: 20
+                    )
+                    .position(by: .value("Category", chart.category.rawValue), axis: .horizontal)
+                    .foregroundStyle(by: .value("Category", chart.category.rawValue))
                 }
             }
         }
+        //Making chart scrollable
+        .chartScrollableAxes(.horizontal)
+        
+        //Foreground colors
+        .chartForegroundStyleScale(range: [Color.green.gradient, Color.red.gradient])
     }
 }
 
