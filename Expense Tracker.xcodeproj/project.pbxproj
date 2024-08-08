@@ -32,6 +32,7 @@
 		435C78832C63B12700445332 /* LockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435C78822C63B12700445332 /* LockView.swift */; };
 		435C78852C63D98F00445332 /* TransactionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435C78842C63D98F00445332 /* TransactionView.swift */; };
 		43A083962C60C61C006BD993 /* TransactionCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43A083952C60C61C006BD993 /* TransactionCardView.swift */; };
+		43A26D802C6532F4006323AF /* ChartModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43A26D7F2C6532F4006323AF /* ChartModel.swift */; };
 		43DDB29D2C64F07E004BACA8 /* FilterTransactionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43DDB29C2C64F07E004BACA8 /* FilterTransactionView.swift */; };
 /* End PBXBuildFile section */
 
@@ -81,6 +82,7 @@
 		435C78822C63B12700445332 /* LockView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LockView.swift; sourceTree = "<group>"; };
 		435C78842C63D98F00445332 /* TransactionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionView.swift; sourceTree = "<group>"; };
 		43A083952C60C61C006BD993 /* TransactionCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionCardView.swift; sourceTree = "<group>"; };
+		43A26D7F2C6532F4006323AF /* ChartModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartModel.swift; sourceTree = "<group>"; };
 		43DDB29C2C64F07E004BACA8 /* FilterTransactionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterTransactionView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -186,6 +188,7 @@
 				434EC5C42C5FC34500D1090D /* Category.swift */,
 				434EC5C62C5FC3A000D1090D /* Transaction.swift */,
 				434EC5C82C5FC44200D1090D /* TintColor.swift */,
+				43A26D7F2C6532F4006323AF /* ChartModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -362,6 +365,7 @@
 				434EC5922C5F997200D1090D /* ContentView.swift in Sources */,
 				434EC5DA2C5FE37B00D1090D /* CardView.swift in Sources */,
 				434EC5BE2C5F99F000D1090D /* IntroScreen.swift in Sources */,
+				43A26D802C6532F4006323AF /* ChartModel.swift in Sources */,
 				43442E532C61317D0077FB6E /* Home.swift in Sources */,
 				435C78852C63D98F00445332 /* TransactionView.swift in Sources */,
 				434EC5C32C5FBEF400D1090D /* Tab.swift in Sources */,
