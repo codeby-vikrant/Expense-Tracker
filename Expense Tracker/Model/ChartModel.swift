@@ -7,12 +7,16 @@
 
 import SwiftUI
 
-struct ChartModel: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
+struct ChartGroup: Identifiable{
+    let id: UUID = .init()
+    var date: Date
+    var categories: [ChartCategory]
+    var totalIncome: Double
+    var totalExpense: Double
 }
 
-#Preview {
-    ChartModel()
+struct ChartCategory: Identifiable{
+    let id: UUID = .init()
+    let totalValue: Double
+    let category: Category
 }
