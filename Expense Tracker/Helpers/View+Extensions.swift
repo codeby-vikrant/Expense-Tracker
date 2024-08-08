@@ -35,4 +35,9 @@ extension View{
         formatter.maximumFractionDigits = allowedDigits
         return formatter.string(from: .init(value: value)) ?? ""
     }
+    
+    var currencySymbol: String{
+        let locale = Locale.current
+        return locale.currencySymbol ?? ""
+    }
 }
