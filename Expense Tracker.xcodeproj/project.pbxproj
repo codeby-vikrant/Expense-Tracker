@@ -32,6 +32,7 @@
 		435C78832C63B12700445332 /* LockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435C78822C63B12700445332 /* LockView.swift */; };
 		435C78852C63D98F00445332 /* TransactionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435C78842C63D98F00445332 /* TransactionView.swift */; };
 		43A083962C60C61C006BD993 /* TransactionCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43A083952C60C61C006BD993 /* TransactionCardView.swift */; };
+		43DDB29D2C64F07E004BACA8 /* FilterTransactionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43DDB29C2C64F07E004BACA8 /* FilterTransactionView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +81,7 @@
 		435C78822C63B12700445332 /* LockView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LockView.swift; sourceTree = "<group>"; };
 		435C78842C63D98F00445332 /* TransactionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionView.swift; sourceTree = "<group>"; };
 		43A083952C60C61C006BD993 /* TransactionCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionCardView.swift; sourceTree = "<group>"; };
+		43DDB29C2C64F07E004BACA8 /* FilterTransactionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterTransactionView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -217,6 +219,7 @@
 				434EC5D92C5FE37B00D1090D /* CardView.swift */,
 				43A083952C60C61C006BD993 /* TransactionCardView.swift */,
 				43442E542C61347A0077FB6E /* DateFilterView.swift */,
+				43DDB29C2C64F07E004BACA8 /* FilterTransactionView.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -353,6 +356,7 @@
 			files = (
 				434EC5C92C5FC44200D1090D /* TintColor.swift in Sources */,
 				434EC5CC2C5FC72900D1090D /* Recents.swift in Sources */,
+				43DDB29D2C64F07E004BACA8 /* FilterTransactionView.swift in Sources */,
 				43442E552C61347A0077FB6E /* DateFilterView.swift in Sources */,
 				434EC5C72C5FC3A000D1090D /* Transaction.swift in Sources */,
 				434EC5922C5F997200D1090D /* ContentView.swift in Sources */,
