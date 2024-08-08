@@ -30,7 +30,7 @@
 		434EC5D62C5FE0A700D1090D /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434EC5D52C5FE0A700D1090D /* Date+Extensions.swift */; };
 		434EC5DA2C5FE37B00D1090D /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434EC5D92C5FE37B00D1090D /* CardView.swift */; };
 		435C78832C63B12700445332 /* LockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435C78822C63B12700445332 /* LockView.swift */; };
-		435C78852C63D98F00445332 /* NewExpenseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435C78842C63D98F00445332 /* NewExpenseView.swift */; };
+		435C78852C63D98F00445332 /* TransactionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435C78842C63D98F00445332 /* TransactionView.swift */; };
 		43A083962C60C61C006BD993 /* TransactionCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43A083952C60C61C006BD993 /* TransactionCardView.swift */; };
 /* End PBXBuildFile section */
 
@@ -78,7 +78,7 @@
 		434EC5D52C5FE0A700D1090D /* Date+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extensions.swift"; sourceTree = "<group>"; };
 		434EC5D92C5FE37B00D1090D /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		435C78822C63B12700445332 /* LockView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LockView.swift; sourceTree = "<group>"; };
-		435C78842C63D98F00445332 /* NewExpenseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewExpenseView.swift; sourceTree = "<group>"; };
+		435C78842C63D98F00445332 /* TransactionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionView.swift; sourceTree = "<group>"; };
 		43A083952C60C61C006BD993 /* TransactionCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionCardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -172,7 +172,7 @@
 				434EC5D82C5FE36C00D1090D /* Helpers */,
 				434EC5CA2C5FC71A00D1090D /* TabViews */,
 				434EC5BD2C5F99F000D1090D /* IntroScreen.swift */,
-				435C78842C63D98F00445332 /* NewExpenseView.swift */,
+				435C78842C63D98F00445332 /* TransactionView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -359,7 +359,7 @@
 				434EC5DA2C5FE37B00D1090D /* CardView.swift in Sources */,
 				434EC5BE2C5F99F000D1090D /* IntroScreen.swift in Sources */,
 				43442E532C61317D0077FB6E /* Home.swift in Sources */,
-				435C78852C63D98F00445332 /* NewExpenseView.swift in Sources */,
+				435C78852C63D98F00445332 /* TransactionView.swift in Sources */,
 				434EC5C32C5FBEF400D1090D /* Tab.swift in Sources */,
 				434EC5D22C5FC74E00D1090D /* Settings.swift in Sources */,
 				434EC5902C5F997200D1090D /* Expense_TrackerApp.swift in Sources */,
