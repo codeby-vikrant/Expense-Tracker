@@ -24,6 +24,10 @@ struct Graphs: View {
                     .background(.background, in: .rect(cornerRadius: 10))
             }
         }
+        .onAppear{
+            //Creating chart group
+            createChartGroup()
+        }
     }
     
     @ViewBuilder
@@ -46,6 +50,17 @@ struct Graphs: View {
         
         //Foreground colors
         .chartForegroundStyleScale(range: [Color.green.gradient, Color.red.gradient])
+    }
+    
+    func createChartGroup() {
+        Task.detached(priority: .high){
+            let calendar = Calendar.current
+            let groupedByDate = Dictionary(grouping: transactions){ transaction in
+                let components = calendar.dateComponents([.month, .year], from: transaction.dateAdded)
+                return components
+            }
+            //Sorting groups by date
+        }
     }
 }
 
