@@ -49,10 +49,8 @@ struct Recents: View {
                                 CustomSegmentedControl()
                                     .padding(.bottom, 10)
                                 
-                                ForEach(transactions){ transaction in
-                                    NavigationLink{
-                                        TransactionView(editTransaction: transaction)
-                                    } label: {
+                                ForEach(transactions.filter({$0.category == selectedCategory.rawValue })){ transaction in
+                                    NavigationLink(value: transaction){
                                         TransactionCardView(transaction: transaction)
                                     }
                                     .buttonStyle(.plain)
@@ -68,6 +66,9 @@ struct Recents: View {
                 .background(.gray.opacity(0.15))
                 .blur(radius: showFilterView ? 8 : 0)
                 .disabled(showFilterView)
+                .navigationDestination(for: Transaction.self){ transaction in
+                        TransactionView(editTransaction: transaction)
+                }
             }
             .overlay{
                 if showFilterView{
