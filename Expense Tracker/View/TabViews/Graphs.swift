@@ -9,16 +9,16 @@ import SwiftUI
 import Charts
 import SwiftData
 
-struct Graphs: View {
-    var body: some View {
-        ScrollView(.vertical){
-            LazyVStack(spacing: 10){
-                //Chart View
-            }
-        }
-    }
+struct ChartGroup: Identifiable{
+    let id: UUID = .init()
+    var date: Date
+    var categories: [ChartCategory]
+    var totalIncome: Double
+    var totalExpense: Double
 }
 
-#Preview {
-    Graphs()
+struct ChartCategory: Identifiable{
+    let id: UUID = .init()
+    let totalValue: Double
+    let category: Category
 }
