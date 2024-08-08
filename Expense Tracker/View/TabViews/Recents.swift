@@ -20,7 +20,6 @@ struct Recents: View {
     
     //Animation
     @Namespace private var animation
-    @Query(sort: [SortDescriptor(\Transaction.dateAdded, order: .reverse)], animation: .snappy) private var transactions: [Transaction]
     
     var body: some View {
         GeometryReader{
@@ -41,20 +40,23 @@ struct Recents: View {
                             })
                             .hSpacing(.leading)
                             
-                            //Card view
-                            CardView(income: 2039, expense: 4098)
-                            
-                            //Custom Segmented Control
-                            CustomSegmentedControl()
-                                .padding(.bottom, 10)
-                            
-                            ForEach(transactions){ transaction in
-                                NavigationLink{
-                                    TransactionView(editTransaction: transaction)
-                                } label: {
-                                    TransactionCardView(transaction: transaction)
+                            FilterTransactionView(startDate: startDate, endDate: endDate){ transactions in
+                                
+                                //Card view
+                                CardView(income: total(transactions, category: .income), expense: total(transactions, category: .expense))
+                                
+                                //Custom Segmented Control
+                                CustomSegmentedControl()
+                                    .padding(.bottom, 10)
+                                
+                                ForEach(transactions){ transaction in
+                                    NavigationLink{
+                                        TransactionView(editTransaction: transaction)
+                                    } label: {
+                                        TransactionCardView(transaction: transaction)
+                                    }
+                                    .buttonStyle(.plain)
                                 }
-                                .buttonStyle(.plain)
                             }
                             
                         } header: {
