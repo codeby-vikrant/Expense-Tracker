@@ -54,6 +54,15 @@ struct Graphs: View {
         //Making chart scrollable
         .chartScrollableAxes(.horizontal)
         .chartXVisibleDomain(length: 4)
+        .chartLegend(position: .bottom, alignment: .trailing)
+        .chartYAxis{
+            AxisMarks(position: .leading){ value in
+                let doubleValue = value.as(Double.self) ?? 0
+                AxisValueLabel{
+                    Text("\(doubleValue)")
+                }
+            }
+        }
         
         //Foreground colors
         .chartForegroundStyleScale(range: [Color.green.gradient, Color.red.gradient])
