@@ -16,17 +16,22 @@ struct Graphs: View {
     @State private var chartGroups: [ChartGroup] = []
     
     var body: some View {
-        ScrollView(.vertical){
-            LazyVStack(spacing: 10){
-                ChartView()
-                    .padding(10)
-                    .frame(height: 200)
-                    .background(.background, in: .rect(cornerRadius: 10))
+        NavigationStack{
+            ScrollView(.vertical){
+                LazyVStack(spacing: 10){
+                    ChartView()
+                        .padding(10)
+                        .frame(height: 200)
+                        .background(.background, in: .rect(cornerRadius: 10))
+                }
+                .padding(15)
             }
-        }
-        .onAppear{
-            //Creating chart group
-            createChartGroup()
+            .navigationTitle("Graphs")
+            .background(.gray.opacity(0.15))
+            .onAppear{
+                //Creating chart group
+                createChartGroup()
+            }
         }
     }
     
@@ -86,6 +91,10 @@ struct Graphs: View {
                     totalIncome: incomeTotalValue,
                     totalExpense: expenseTotalValue
                 )
+            }
+            //Ui must be updated on main thread
+            await MainActor.run{
+                self.chartGroups = chartGroups
             }
         }
     }
