@@ -62,7 +62,7 @@ struct Graphs: View {
                 AxisGridLine()
                 AxisTick()
                 AxisValueLabel{
-                    Text("\(doubleValue)")
+                    Text(axisLabel(doubleValue))
                 }
             }
         }
@@ -111,6 +111,12 @@ struct Graphs: View {
                 self.chartGroups = chartGroups
             }
         }
+    }
+    
+    func axisLabel(_ value: Double) -> String{
+        let intValue = Int(value)
+        let kValue = intValue / 1000
+        return intValue < 1000 ? "\(intValue)" : "\(kValue)K"
     }
 }
 
