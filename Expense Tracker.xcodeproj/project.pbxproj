@@ -15,6 +15,14 @@
 		4347AFF92C69E4D50020FC59 /* StatsCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4347AFF82C69E4D50020FC59 /* StatsCardView.swift */; };
 		4347AFFB2C69E4D70020FC59 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4347AFFA2C69E4D70020FC59 /* Assets.xcassets */; };
 		4347AFFF2C69E4D70020FC59 /* StatsCardViewExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 4347AFEF2C69E4D50020FC59 /* StatsCardViewExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		4347B0042C69E7700020FC59 /* FilterTransactionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43DDB29C2C64F07E004BACA8 /* FilterTransactionView.swift */; };
+		4347B0052C69E7B40020FC59 /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434EC5D52C5FE0A700D1090D /* Date+Extensions.swift */; };
+		4347B0062C69E7C00020FC59 /* View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434EC5D32C5FD3D800D1090D /* View+Extensions.swift */; };
+		4347B0072C69E8B80020FC59 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434EC5D92C5FE37B00D1090D /* CardView.swift */; };
+		4347B0082C69E9520020FC59 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434EC5C42C5FC34500D1090D /* Category.swift */; };
+		4347B0092C69E9C80020FC59 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434EC5C62C5FC3A000D1090D /* Transaction.swift */; };
+		4347B00A2C69EA5C0020FC59 /* TintColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434EC5C82C5FC44200D1090D /* TintColor.swift */; };
+		4347B00B2C69EAB60020FC59 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434EC5C02C5FBBEA00D1090D /* Constants.swift */; };
 		434EC5902C5F997200D1090D /* Expense_TrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434EC58F2C5F997200D1090D /* Expense_TrackerApp.swift */; };
 		434EC5922C5F997200D1090D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434EC5912C5F997200D1090D /* ContentView.swift */; };
 		434EC5942C5F997300D1090D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 434EC5932C5F997300D1090D /* Assets.xcassets */; };
@@ -90,6 +98,8 @@
 		4347AFF82C69E4D50020FC59 /* StatsCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsCardView.swift; sourceTree = "<group>"; };
 		4347AFFA2C69E4D70020FC59 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4347AFFC2C69E4D70020FC59 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4347B00C2C69EB350020FC59 /* Expense Tracker.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Expense Tracker.entitlements"; sourceTree = "<group>"; };
+		4347B00D2C69EB990020FC59 /* StatsCardViewExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = StatsCardViewExtension.entitlements; sourceTree = "<group>"; };
 		434EC58C2C5F997200D1090D /* Expense Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Expense Tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		434EC58F2C5F997200D1090D /* Expense_TrackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Expense_TrackerApp.swift; sourceTree = "<group>"; };
 		434EC5912C5F997200D1090D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -177,6 +187,7 @@
 		434EC5832C5F997200D1090D = {
 			isa = PBXGroup;
 			children = (
+				4347B00D2C69EB990020FC59 /* StatsCardViewExtension.entitlements */,
 				434EC58E2C5F997200D1090D /* Expense Tracker */,
 				434EC59F2C5F997300D1090D /* Expense TrackerTests */,
 				434EC5A92C5F997300D1090D /* Expense TrackerUITests */,
@@ -200,6 +211,7 @@
 		434EC58E2C5F997200D1090D /* Expense Tracker */ = {
 			isa = PBXGroup;
 			children = (
+				4347B00C2C69EB350020FC59 /* Expense Tracker.entitlements */,
 				434EC5BF2C5FBBAC00D1090D /* Helpers */,
 				434EC5BA2C5F99A100D1090D /* Model */,
 				434EC5B92C5F999300D1090D /* View */,
@@ -455,7 +467,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				4347AFF92C69E4D50020FC59 /* StatsCardView.swift in Sources */,
+				4347B0052C69E7B40020FC59 /* Date+Extensions.swift in Sources */,
+				4347B0092C69E9C80020FC59 /* Transaction.swift in Sources */,
 				4347AFF72C69E4D50020FC59 /* StatsCardViewBundle.swift in Sources */,
+				4347B0062C69E7C00020FC59 /* View+Extensions.swift in Sources */,
+				4347B00B2C69EAB60020FC59 /* Constants.swift in Sources */,
+				4347B0072C69E8B80020FC59 /* CardView.swift in Sources */,
+				4347B0042C69E7700020FC59 /* FilterTransactionView.swift in Sources */,
+				4347B00A2C69EA5C0020FC59 /* TintColor.swift in Sources */,
+				4347B0082C69E9520020FC59 /* Category.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -531,6 +551,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = StatsCardViewExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 5K5BDZUHYX;
@@ -544,7 +565,7 @@
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.Vicky.Expense-Tracker.StatsCardView";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Vicky.ExpenseTracker.StatsCardView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -558,6 +579,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = StatsCardViewExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 5K5BDZUHYX;
@@ -571,7 +593,7 @@
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.Vicky.Expense-Tracker.StatsCardView";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Vicky.ExpenseTracker.StatsCardView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -705,6 +727,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Expense Tracker/Expense Tracker.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Expense Tracker/Preview Content\"";
@@ -722,7 +745,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.Vicky.Expense-Tracker";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Vicky.ExpenseTracker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -736,6 +759,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Expense Tracker/Expense Tracker.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Expense Tracker/Preview Content\"";
@@ -753,7 +777,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.Vicky.Expense-Tracker";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Vicky.ExpenseTracker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
