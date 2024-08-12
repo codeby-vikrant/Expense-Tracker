@@ -11,7 +11,7 @@ struct IntroScreen: View {
     @AppStorage("isFirsTime") private var isFirstTime: Bool = true
     var body: some View {
         VStack(spacing: 15){
-            Text("What's new in the\nExpense Tracker")
+            Text("What's new in the\nSpendLedger")
                 .font(.largeTitle.bold())
                 .multilineTextAlignment(.center)
                 .padding(.top, 65)
