@@ -58,6 +58,9 @@ struct Graphs: View {
         .chartYAxis{
             AxisMarks(position: .leading){ value in
                 let doubleValue = value.as(Double.self) ?? 0
+                
+                AxisGridLine()
+                AxisTick()
                 AxisValueLabel{
                     Text("\(doubleValue)")
                 }
