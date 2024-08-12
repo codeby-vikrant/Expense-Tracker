@@ -9,17 +9,17 @@ import WidgetKit
 import SwiftUI
 
 struct Provider: TimelineProvider {
-    func placeholder(in context: Context) -> SimpleEntry {
-        SimpleEntry(date: Date())
+    func placeholder(in context: Context) -> WidgetEntry {
+        WidgetEntry(date: Date())
     }
 
-    func getSnapshot(in context: Context, completion: @escaping (SimpleEntry) -> ()) {
-        let entry = SimpleEntry(date: Date())
+    func getSnapshot(in context: Context, completion: @escaping (WidgetEntry) -> ()) {
+        let entry = WidgetEntry(date: Date())
         completion(entry)
     }
 
     func getTimeline(in context: Context, completion: @escaping (Timeline<Entry>) -> ()) {
-        var entries: [SimpleEntry] = []
+        var entries: [WidgetEntry] = []
         
         entries.append(.init(date: .now))
 
@@ -28,7 +28,7 @@ struct Provider: TimelineProvider {
     }
 }
 
-struct SimpleEntry: TimelineEntry {
+struct WidgetEntry: TimelineEntry {
     let date: Date
 }
 
@@ -47,14 +47,8 @@ struct StatsCardView: Widget {
 
     var body: some WidgetConfiguration {
         StaticConfiguration(kind: kind, provider: Provider()) { entry in
-            if #available(iOS 17.0, *) {
-                StatsCardViewEntryView(entry: entry)
-                    .containerBackground(.fill.tertiary, for: .widget)
-            } else {
-                StatsCardViewEntryView(entry: entry)
-                    .padding()
-                    .background()
-            }
+            StatsCardViewEntryView(entry: entry)
+                .containerBackground(.fill.tertiary, for: .widget)
         }
         .contentMarginsDisabled()
         .configurationDisplayName("My Widget")
@@ -65,5 +59,5 @@ struct StatsCardView: Widget {
 #Preview(as: .systemSmall) {
     StatsCardView()
 } timeline: {
-    SimpleEntry(date: .now)
+    WidgetEntry(date: .now)
 }
